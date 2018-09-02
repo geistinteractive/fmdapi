@@ -1,0 +1,40 @@
+{
+  "name": "fmdapi",
+  "version": "0.0.1",
+  "description": "FileMaker Server Data API Connector",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "test": "DEBUG=fmdapi:* mocha -r esm test/*.test.js --recursive --file test/bootstrap.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/geistinteractive/fmdapi.git"
+  },
+  "keywords": [
+    "FileMaker",
+    "Server"
+  ],
+  "author": "todd@geistinteractive.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/geistinteractive/fmdapi/issues"
+  },
+  "homepage": "https://github.com/geistinteractive/fmdapi#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "debug": "^3.1.0",
+    "esm": "^3.0.81",
+    "form-data": "^2.3.2",
+    "lodash": "^4.17.10",
+    "yup": "^0.26.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^5.4.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "mocha": "^5.2.0",
+    "npm": "^1.0.2"
+  }
+}
